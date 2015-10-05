@@ -1,5 +1,12 @@
 SpaceHipster.MainMenu = function() {};
 
+init: function(score){
+    var score = score || 0;
+    this.highestScore = this.highestScore || 0;
+
+    this.highestScore = Math.max(score, this.highestScore);
+}
+
 SpaceHipster.MainMenu.prototype = {
     create:function() {
         //show the space tile, repeated.
@@ -12,7 +19,7 @@ SpaceHipster.MainMenu.prototype = {
         var style = { font: '30px Arial', fill: "#fff", align: 'center'};
         var t = this.game.add.text(this.game.width/2, this.game.height/2, text, style);
         t.anchor.set(0.5);
-        
+
         //high score
         text = 'Highest score:' + this.hightestScore;
         style = { font: '15px Arial', fill: '#fff', align: 'center'};
