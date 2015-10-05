@@ -1,6 +1,6 @@
 SpaceHipster.MainMenu = function() {};
 
-init: function(score){
+var init = function(score){
     var score = score || 0;
     this.highestScore = this.highestScore || 0;
 

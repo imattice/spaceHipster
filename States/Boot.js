@@ -10,7 +10,7 @@ SpaceHipster.Boot.prototype = {
         //assets we will use in the loading screen
         this.load.image('logo', 'assets/images/logo.png');
         this.load.image('preloader', 'assets/images/preloader-bar.png');
-    };
+    },
     create: function () {
         //loading screen will have a white background
         this.game.state.backgroundColor = '#fff';
@@ -29,7 +29,7 @@ SpaceHipster.Boot.prototype = {
         this.scale.setScreenSize(true);
 
         //physics for movement
-        this.game.physics.startSystem(Phaser.Physics.ARCADE);
+        this.game.physics.startSystem(Phaser.Physics.ARCADE),
 
             this.state.start('Preload');
     }
