@@ -26,7 +26,7 @@ SpaceHipster.Boot.prototype = {
         this.scale.pageAlignHOrizontally = true;
 
         //screen size will be set automatically
-        this.scale.setScreenSize(true);
+        // this.scale.setScreenSize(true);
 
         //physics for movement
         this.game.physics.startSystem(Phaser.Physics.ARCADE),
